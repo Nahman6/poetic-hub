@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Beat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Esteban&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Esteban&family=Inconsolata:wght@200..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      
+
+      * {
+        font-family: "Esteban", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .blueShadow {
+        box-shadow: 0px 14px 55px #a06230;
+      }
+
+      .lightShadow {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .lightShadow p {
+        position: relative;
+        z-index: 2;
+      }
+
+      .lightShadow::after {
+        position: absolute;
+        content: "";
+        background: rgb(146, 33, 13);
+        opacity: 0.04;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 100%;
+        transition-duration: 200ms;
+        z-index: 0;
+      }
+
+      .lightShadow:hover::after {
+        transform: translateX(100%);
+      }
+
+       
+
+      
+      footer {
+        text-align: center;
+        font-size: 50px;
+        font-family: "Esteban", serif;
+        font-weight: 700px;
+      }
+      button {
+        font-size: 20px;
+        font-family: "Esteban", serif;
+        font-weight: 700px;
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" href="./output.css" />
+  <body>
+
+    <img src="bg.jpeg" class="fixed w-full h-full opacity-80"/>
+    <div class="fixed inset-0 bgGrid z-[-1] opacity-70"></div>
+    
+      <h1
+        class="text-center text-9xl font-playfair-display-sc py-80 underline decoration-2 underline-offset-8 "
+      >
+        Find Your Inner Beat
+      </h1>
+      <header>
+      <div class="para">
+        <p class="text-center font-playfair-display-sc mt-60 mb-20 text-9xl">ॐ</p>
+        <p class=" text-center font-playfair-display-sc pb-4 text-3xl ">
+          I am a servant of the Lord.<br/>The strength she gives me is the only reason I
+          exist. <br/>I often write poetry inspired by the words
+          of my beloved Guru and below is one of them.<p class="text-center font-bold pb-80 text-5xl"><br/><br/>She is <i class="font-bold underline">everything</i>. There are simply no words to describe Her Grace.</p>
+        </p>
+      
+          <br /><br /><br /><br /><br />
+      </div>
+    </header>
+    <main id="app">
+      <section>
+        <h2 class="text-center text-9xl font-playfair-display-sc mt-24 mb-16 underline decoration-2 underline-offset-8 ">Her Grace</h2>
+        <div id="para">
+          <p class="text-center font-bold text-3xl mb-80 font-playfair-display-sc">
+            Caresses your hair,<br />
+            Tucks it back.<br />
+            Holds you near,<br />
+            Kisses your crown.<br /><br />
+            Shows the truth,<br />
+            Shadows Ruth.<br />Braces you,<br />
+            Completes you.<br /><br />
+            Her presence, utter bliss,<br />
+            Her words, all of wisdom.<br />
+            Her smile, brings peace,<br />
+            Her love, Elation.
+          </p>
+        </div>
+        <div class="flex justify-between">
+          <button class="text-left text-xl px-6 py-3 sm:px-4 sm:py-2 mb-32 ml-10 lightShadow cursor-pointer rounded-full bg-orange-200 blueShadow font-medium">
+            <p>More like this</p>
+          </button>
+          <button class="text-xl px-6 py-3 sm:px-4 sm:py-2 mb-32 mr-10 lightShadow cursor-pointer rounded-full bg-orange-400 blueShadow font-medium">
+            <p>Connect</p>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="flex items-center justify-center py-10 text-2xl font-Esteban">
+      <p>Thank you for reading</p>
+    </footer>
+  </body>
+</html>
